@@ -1,42 +1,40 @@
-var kladdkakaIngredienser = [{
-    mangd: 125, ravara: 'Smör', enhet: 'g'
+var kladdkakaIngredients = [{
+    amount: 125, ingredient: 'Smör', unit: 'g'
 }, {
-    mangd: 2.5, ravara: 'Strösocker', enhet: 'dl'
+    amount: 2.5, ingredient: 'Strösocker', unit: 'dl'
 }, {
-    mangd: 2, ravara: 'Ägg', enhet: 'st'
+    amount: 2, ingredient: 'Ägg', unit: 'st'
 }, {
-    mangd: 1, ravara: 'Vetemjöl', enhet: 'dl'
+    amount: 1, ingredient: 'Vetemjöl', unit: 'dl'
 }, {
-    mangd: 3, ravara: 'Kakao', enhet: 'msk'
+    amount: 3, ingredient: 'Kakao', unit: 'msk'
 }, {
-    mangd: 1, ravara: 'Vaniljsocker', enhet: 'tsk'
+    amount: 1, ingredient: 'Vaniljsocker', unit: 'tsk'
 }]
 
 function init() {
-    var mangdList = document.getElementsByClassName("mangd");
-    var enhetList = document.getElementsByClassName("enhet");
-    var ravaraList = document.getElementsByClassName("ravara");
+    var amountList = document.getElementsByClassName("amount");
+    var unitList = document.getElementsByClassName("unit");
+    var ingredientList = document.getElementsByClassName("ingredient");
 
-    for (var i = 0; i < kladdkakaIngredienser.length; i++) {
-        mangdList[i].innerHTML = kladdkakaIngredienser[i].mangd;
-        enhetList[i].innerHTML = kladdkakaIngredienser[i].enhet;
-        ravaraList[i].innerHTML = kladdkakaIngredienser[i].ravara;
+    for (var i = 0; i < kladdkakaIngredients.length; i++) {
+        amountList[i].innerHTML = kladdkakaIngredients[i].amount;
+        unitList[i].innerHTML = kladdkakaIngredients[i].unit;
+        ingredientList[i].innerHTML = kladdkakaIngredients[i].ingredient;
     }
 }
 
-function countMangd() {
-    // Hämta antal från select
-    var antal = document.getElementById("antalSelect").value;
-    var mangdList = document.getElementsByClassName("mangd");
-
-   for (var i = 0; i < kladdkakaIngredienser.length; i++) {
-    mangdList[i].innerHTML = kladdkakaIngredienser[i].mangd * antal;
+function countAmount() {
+    var qty = document.getElementById("qtySelect").value;
+    var amountList = document.getElementsByClassName("amount");
+/** 
+   for (var i = 0; i < kladdkakaIngredients.length; i++) {
+    amountList[i].innerHTML = kladdkakaIngredients[i].amount * antal;
     }
-
-    /**
-     for (var i = 0; i < mangdList.length; i++) {
-        mangdList[i].innerHTML = mangdList[i].innerHTML * antal;
-    }*/
+*/
+     for (var i = 0; i < amountList.length; i++) {
+        amountList[i].innerHTML = amountList[i].dataset.amount * qty;
+    }
 }
 
 function stepDone(element) {
@@ -55,22 +53,22 @@ function stepDone(element) {
 
 function init2() {
     var tbody = document.getElementsByTagName('tbody')[0];
-    for (var i = 0; i < kladdkakaIngredienser.length; i++) {
+    for (var i = 0; i < kladdkakaIngredients.length; i++) {
         var tr = document.createElement('tr');
 
-        var tdMangd = document.createElement('td');
-        tdMangd.classList.add('mangd');
-        tdMangd.innerHTML = kladdkakaIngredienser[i].mangd;
+        var tdAmount = document.createElement('td');
+        tdAmount.classList.add('amount');
+        tdAmount.innerHTML = kladdkakaIngredients[i].amount;
 
-        var tdEnhet = document.createElement('td');
-        tdEnhet.innerHTML = kladdkakaIngredienser[i].enhet;
+        var tdUnit = document.createElement('td');
+        tdUnit.innerHTML = kladdkakaIngredients[i].unit;
 
-        var tdRavara = document.createElement('td');
-        tdRavara.innerHTML = kladdkakaIngredienser[i].ravara;
+        var tdIngredient = document.createElement('td');
+        tdIngredient.innerHTML = kladdkakaIngredients[i].ingredient;
 
-        tr.appendChild(tdMangd);
-        tr.appendChild(tdEnhet);
-        tr.appendChild(tdRavara);
+        tr.appendChild(tdAmount);
+        tr.appendChild(tdUnit);
+        tr.appendChild(tdIngredient);
         tbody.appendChild(tr);
     }
 
