@@ -26,6 +26,7 @@ function init() {
 
 function countAmount() {
     var qty = document.getElementById("qtySelect").value;
+    console.log(qty);
     var amountList = document.getElementsByClassName("amount");
 /** 
    for (var i = 0; i < kladdkakaIngredients.length; i++) {
@@ -33,7 +34,8 @@ function countAmount() {
     }
 */
      for (var i = 0; i < amountList.length; i++) {
-        amountList[i].innerHTML = amountList[i].dataset.amount * qty;
+        var newAmount = amountList[i].dataset.amount * qty;
+        amountList[i].innerHTML = newAmount
     }
 }
 
