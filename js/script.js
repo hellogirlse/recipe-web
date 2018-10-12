@@ -19,6 +19,7 @@ function init() {
 
     for (var i = 0; i < kladdkakaIngredients.length; i++) {
         amountList[i].innerHTML = kladdkakaIngredients[i].amount;
+        amountList[i].dataset.amount = kladdkakaIngredients[i].amount;
         unitList[i].innerHTML = kladdkakaIngredients[i].unit;
         ingredientList[i].innerHTML = kladdkakaIngredients[i].ingredient;
     }
@@ -32,8 +33,8 @@ function countAmount() {
    for (var i = 0; i < kladdkakaIngredients.length; i++) {
     amountList[i].innerHTML = kladdkakaIngredients[i].amount * antal;
     }
-*/
-     for (var i = 0; i < amountList.length; i++) {
+    */
+    for (var i = 0; i < amountList.length; i++) {
         var newAmount = amountList[i].dataset.amount * qty;
         amountList[i].innerHTML = newAmount
     }
@@ -60,6 +61,7 @@ function init2() {
 
         var tdAmount = document.createElement('td');
         tdAmount.classList.add('amount');
+        tdAmount.dataset.amount = kladdkakaIngredients[i].amount;
         tdAmount.innerHTML = kladdkakaIngredients[i].amount;
 
         var tdUnit = document.createElement('td');
