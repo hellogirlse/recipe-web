@@ -3,7 +3,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 p {
@@ -33,10 +33,11 @@ header {
 	color: #2d3436;
 	margin-right: 24px;
 	text-transform: uppercase;
+	font-weight: 400;
 }
 
 .main-nav a:hover {
-	color: #d63031;
+	color: #f1606c;
 	text-decoration: none;
 }
 
@@ -45,19 +46,26 @@ header {
 	height: 600px;
 	background-image: url('../img/hero-img.jpg');
 	background-repeat: no-repeat;
-	background-position: top center;
+	background-position: center;
 	background-size: cover;
 }
 
 .hero-title {
 	font-size: 72px;
-	color: #e74c3c;
-	font-family: 'Pacifico', sans-serif;
+	color: #faced4;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.front-title {
+	text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.8);
 }
 
 .ingress {
 	margin-top: 20px;
-	font-size: 20px;
+	font-size: 24px;
+}
+
+.hero-ingress {
 }
 
 /* CARD STYLE */
@@ -82,8 +90,8 @@ header {
 
 .card h2 {
 	font-size: 32px;
-	font-family: 'Pacifico', sans-serif;
-	margin-bottom: 20px;
+	font-family: 'Montserrat Alternates', sans-serif;
+	margin-bottom: 16px;
 }
 
 .card p {
@@ -94,7 +102,7 @@ header {
 }
 
 .card a {
-	background-color: #e74c3c;
+	background-color: #faced4;
 	padding: 12px;
 	width: 50%;
 	font-size: 18px;
@@ -104,7 +112,7 @@ header {
 }
 
 .card a:hover {
-	background-color: #c0392b;
+	background-color: #f1606c;
 }
 
 /* KLADDKAKA.HTML STYLE */
@@ -118,7 +126,7 @@ header {
 
 .recipe-container h2 {
 	font-size: 32px;
-	font-family: 'Pacifico', sans-serif;
+	font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .recipe-container label {
@@ -134,12 +142,12 @@ select {
 }
 
 select:hover {
-	background-color: #ff7675;
+	background-color: #faced4;
 }
 
 select:focus {
 	outline: none;
-	background-color: #ff7675;
+	background-color: #faced4;
 }
 
 table {
@@ -158,7 +166,7 @@ tbody {
 }
 
 .recipe-container h3 {
-	font-family: 'Pacifico', sans-serif;
+	font-family: 'Montserrat Alternates', sans-serif;
 	font-size: 32px;
 	margin-top: 60px;
 	margin-bottom: 20px;
@@ -200,12 +208,12 @@ form input, input.form-control {
 	font-size: 16px;
 	padding: 20px;
 	margin-bottom: 32px;
-	border: 1px solid #e74c3c;
+	border: 1px solid #f78fb3;
 }
 
 form input.form-control:focus {
 	border-color: #ffb8b8;
-	box-shadow: 0 0 0 4px rgba(255, 184, 184,0.5);
+	box-shadow: 0 0 0 4px rgba(248, 165, 194,0.5);
 }
 
 form textarea, textarea.form-control {
@@ -213,12 +221,12 @@ form textarea, textarea.form-control {
 	padding: 20px;
 	font-size: 16px;
 	resize: vertical;
-	border: 1px solid #e74c3c;
+	border: 1px solid #f8a5c2;
 }
 
 form textarea.form-control:focus {
 	border-color: #ffb8b8;
-	box-shadow: 0 0 0 4px rgba(255, 184, 184,0.5);
+	box-shadow: 0 0 0 4px rgba(248, 165, 194,0.5);
 }
 
 ol > li.list-group-item.step-done{
