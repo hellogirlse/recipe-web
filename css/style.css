@@ -37,7 +37,7 @@ header {
 }
 
 .main-nav a:hover {
-	color: #f1606c;
+	color: #2ed573;
 	text-decoration: none;
 }
 
@@ -52,20 +52,13 @@ header {
 
 .hero-title {
 	font-size: 72px;
-	color: #faced4;
+	color: #2ed573;
 	font-family: 'Montserrat Alternates', sans-serif;
-}
-
-.front-title {
-	text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.8);
 }
 
 .ingress {
 	margin-top: 20px;
 	font-size: 24px;
-}
-
-.hero-ingress {
 }
 
 /* CARD STYLE */
@@ -102,7 +95,7 @@ header {
 }
 
 .card a {
-	background-color: #faced4;
+	background-color: #7bed9f;
 	padding: 12px;
 	width: 50%;
 	font-size: 18px;
@@ -112,10 +105,10 @@ header {
 }
 
 .card a:hover {
-	background-color: #f1606c;
+	background-color: #2ed573;
 }
 
-/* KLADDKAKA.HTML STYLE */
+/* TOMATSOPPA.HTML STYLE */
 .hero-img {
 	max-width: 100%;
 }
@@ -142,12 +135,12 @@ select {
 }
 
 select:hover {
-	background-color: #faced4;
+	background-color: #7bed9f;
 }
 
 select:focus {
 	outline: none;
-	background-color: #faced4;
+	background-color: #7bed9f;
 }
 
 table {
@@ -208,12 +201,12 @@ form input, input.form-control {
 	font-size: 16px;
 	padding: 20px;
 	margin-bottom: 32px;
-	border: 1px solid #f78fb3;
+	border: 1px solid #2ed573;
 }
 
 form input.form-control:focus {
-	border-color: #ffb8b8;
-	box-shadow: 0 0 0 4px rgba(248, 165, 194,0.5);
+	border-color: #2ed573;
+	box-shadow: 0 0 0 4px rgba(123, 237, 159,0.5);
 }
 
 form textarea, textarea.form-control {
@@ -221,12 +214,26 @@ form textarea, textarea.form-control {
 	padding: 20px;
 	font-size: 16px;
 	resize: vertical;
-	border: 1px solid #f8a5c2;
+	border: 1px solid #2ed573;
 }
 
 form textarea.form-control:focus {
-	border-color: #ffb8b8;
-	box-shadow: 0 0 0 4px rgba(248, 165, 194,0.5);
+	border-color: #2ed573;
+	box-shadow: 0 0 0 4px rgba(123, 237, 159,0.5);
+}
+
+form input[type=submit] {
+	background-color: #7bed9f;
+	padding: 24px;
+	width: 50%;
+	font-size: 18px;
+	border: none;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+form input[type=submit]:hover {
+	background-color: #2ed573;
 }
 
 ol > li.list-group-item.step-done{
