@@ -1,42 +1,38 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title>Hello Girl Recept!</title>
-        <link href="./css/style.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Pacifico" rel="stylesheet">
-    </head>
+	<head>
+		<title>Hello Girl Recept!</title>
+	</head>
 
-    <body>
+	<body>
+		<header>
+			<img id="logo" src="./img/logo.png" />
+			<nav class="main-nav">
+				<a href="index.html">Hem</a>
+				<a href="kontakt.html">Kontakta oss</a>
+				<a href="http://digitaldreams.cc/" target="_blank">Digital Dreams</a>
+			</nav>
+		</header>
 
-        <header>
-            <img id="logo" src="./img/logo.png" />
-            <nav class="main-nav">
-                <a href="index.html">Hem</a>
-                <a href="kontakt.html">Kontakta oss</a>
-                <a href="http://digitaldreams.cc/" target="_blank">Digital Dreams</a>
-            </nav>
-        </header>
+		<div class="page-container">
+			<h1 class="hero-title">Nyfiken på andra recept?</h1>
+			<p class="ingress">Hör av dig om du vill.</p>				
+				<form>
+					<label for="name">Namn</label>
+					<input name="name" type="text" placeholder="Förnamn Efternamn" required/>
 
-        <div class="page-container">
+					<label for="mail">E-post</label>
+					<input name="mail" type="email" placeholder="exempel@epost.se" required/>
 
-					<h1 class="hero-title">Nyfiken på andra recept?</h1>
-					<p class="ingress">Fyll i formuläret medan så kan vi koka ihop något tillsammans!</p>
+					<label for="message">Meddelande</label>
+					<textarea name="message" placeholder="Skriv ett meddelande" required></textarea>
 
-					<form>
+					<input type="submit" value="Skicka"/>
 
-						<label>Namn</label>
-						<input type="text" placeholder="Förnamn Efternamn" required/>
+				</form>
+		</div>
 
-						<label>E-post</label>
-						<input type="email" placeholder="exempel@epost.se" required/>
-
-						<label>Meddelande</label>
-						<textarea placeholder="Vad undrar du?" required></textarea>
-
-					</form>
-
-        </div>
-
-    </body>
+	</body>
+	
 </html>

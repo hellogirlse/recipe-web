@@ -3,7 +3,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 p {
@@ -33,10 +33,11 @@ header {
 	color: #2d3436;
 	margin-right: 24px;
 	text-transform: uppercase;
+	font-weight: 400;
 }
 
 .main-nav a:hover {
-	color: #d63031;
+	color: #2ed573;
 	text-decoration: none;
 }
 
@@ -45,19 +46,19 @@ header {
 	height: 600px;
 	background-image: url('../img/hero-img.jpg');
 	background-repeat: no-repeat;
-	background-position: top center;
+	background-position: center;
 	background-size: cover;
 }
 
 .hero-title {
 	font-size: 72px;
-	color: #e74c3c;
-	font-family: 'Pacifico', sans-serif;
+	color: #2ed573;
+	font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .ingress {
 	margin-top: 20px;
-	font-size: 20px;
+	font-size: 24px;
 }
 
 /* CARD STYLE */
@@ -82,8 +83,8 @@ header {
 
 .card h2 {
 	font-size: 32px;
-	font-family: 'Pacifico', sans-serif;
-	margin-bottom: 20px;
+	font-family: 'Montserrat Alternates', sans-serif;
+	margin-bottom: 16px;
 }
 
 .card p {
@@ -94,7 +95,7 @@ header {
 }
 
 .card a {
-	background-color: #e74c3c;
+	background-color: #7bed9f;
 	padding: 12px;
 	width: 50%;
 	font-size: 18px;
@@ -104,10 +105,10 @@ header {
 }
 
 .card a:hover {
-	background-color: #c0392b;
+	background-color: #2ed573;
 }
 
-/* KLADDKAKA.HTML STYLE */
+/* TOMATSOPPA.HTML STYLE */
 .hero-img {
 	max-width: 100%;
 }
@@ -118,7 +119,7 @@ header {
 
 .recipe-container h2 {
 	font-size: 32px;
-	font-family: 'Pacifico', sans-serif;
+	font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .recipe-container label {
@@ -134,12 +135,12 @@ select {
 }
 
 select:hover {
-	background-color: #ff7675;
+	background-color: #7bed9f;
 }
 
 select:focus {
 	outline: none;
-	background-color: #ff7675;
+	background-color: #7bed9f;
 }
 
 table {
@@ -158,7 +159,7 @@ tbody {
 }
 
 .recipe-container h3 {
-	font-family: 'Pacifico', sans-serif;
+	font-family: 'Montserrat Alternates', sans-serif;
 	font-size: 32px;
 	margin-top: 60px;
 	margin-bottom: 20px;
@@ -173,6 +174,9 @@ ol > li.list-group-item {
 	display: list-item;
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+ol > li.list-group-item:hover {
+	cursor: pointer;
 }
 
 /* KONTAKT.HTML STYLE */
@@ -197,12 +201,12 @@ form input, input.form-control {
 	font-size: 16px;
 	padding: 20px;
 	margin-bottom: 32px;
-	border: 1px solid #e74c3c;
+	border: 1px solid #2ed573;
 }
 
 form input.form-control:focus {
-	border-color: #ffb8b8;
-	box-shadow: 0 0 0 4px rgba(255, 184, 184,0.5);
+	border-color: #2ed573;
+	box-shadow: 0 0 0 4px rgba(123, 237, 159,0.5);
 }
 
 form textarea, textarea.form-control {
@@ -210,10 +214,29 @@ form textarea, textarea.form-control {
 	padding: 20px;
 	font-size: 16px;
 	resize: vertical;
-	border: 1px solid #e74c3c;
+	border: 1px solid #2ed573;
 }
 
 form textarea.form-control:focus {
-	border-color: #ffb8b8;
-	box-shadow: 0 0 0 4px rgba(255, 184, 184,0.5);
+	border-color: #2ed573;
+	box-shadow: 0 0 0 4px rgba(123, 237, 159,0.5);
+}
+
+form input[type=submit] {
+	background-color: #7bed9f;
+	padding: 24px;
+	width: 50%;
+	font-size: 18px;
+	border: none;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+form input[type=submit]:hover {
+	background-color: #2ed573;
+}
+
+ol > li.list-group-item.step-done{
+	text-decoration: line-through;
+	background-color: #ecf0f1;
 }

@@ -6,6 +6,8 @@
 		<link href="../css/style.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:800|Open+Sans:300,400,700" rel="stylesheet">
+		<script src="../js/script.js"></script>
+
 	</head>
 
 	<body>
@@ -30,33 +32,33 @@
 
 		<div class="page-container container">
 
-					<h1 class="hero-title">Nyfiken på andra recept?</h1>
-					<p class="ingress">Fyll i formuläret medan så kan vi koka ihop något tillsammans!</p>
+			<h1 class="hero-title">Nyfiken på andra recept?</h1>
+			<p class="ingress">Fyll i formuläret medan så kan vi koka ihop något tillsammans!</p>
 
-					<form>
-						<div class="row">
+			<form onsubmit="submitForm()">
+				<div class="row">
 
-							<div class="col-6 form-group">
-								<label>Namn</label>
-								<input class="form-control" type="text" placeholder="Förnamn Efternamn" required/>
-							</div>
+					<div class="col-6 form-group">
+						<label>Namn</label>
+						<input class="form-control" type="text" placeholder="Förnamn Efternamn" required/>
+					</div>
 
-							<div class="col-6 form-group">
-								<label>E-post</label>
-								<input class="form-control" type="email" placeholder="exempel@epost.se" required/>
-							</div>
+					<div class="col-6 form-group">
+						<label>E-post</label>
+						<input class="form-control" type="email" placeholder="exempel@epost.se" required/>
+					</div>
 
-							<div class="col-12 form-group">
-								<label>Meddelande</label>
-								<textarea class="form-control" placeholder="Skriv ett meddelande" required></textarea>
-							</div>
+					<div class="col-12 form-group">
+						<label>Meddelande</label>
+						<textarea class="form-control" placeholder="Skriv ett meddelande" required></textarea>
+					</div>
 
-							<div class="col-12 form-group">
-								<input type="submit" class="btn btn-primary" value="Skicka"/>
-							</div>
+					<div class="col-12 form-group">
+						<input type="submit" class="btn btn-primary" value="Skicka"/>
+					</div>
 
-						</div>
-					</form>
+				</div>
+			</form>
 
 		</div>
 
