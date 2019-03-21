@@ -17,16 +17,18 @@
 
 		<div class="page-container">
 			<h1 class="hero-title">Nyfiken på andra recept?</h1>
-			<p class="ingress">Fyll i formuläret medan så kan vi koka ihop något tillsammans!</p>				
+			<p class="ingress">Hör av dig om du vill.</p>				
 				<form>
-					<label>Namn</label>
-					<input type="text" placeholder="Förnamn Efternamn" required/>
+					<label for="name">Namn</label>
+					<input name="name" type="text" placeholder="Förnamn Efternamn" required/>
 
-					<label>E-post</label>
-					<input type="email" placeholder="exempel@epost.se" required/>
+					<label for="mail">E-post</label>
+					<input name="mail" type="email" placeholder="exempel@epost.se" required/>
 
-					<label>Meddelande</label>
-					<textarea placeholder="Vad undrar du?" required></textarea>
+					<label for="message">Meddelande</label>
+					<textarea name="message" required></textarea>
+					
+					<input value="Skicka" type="submit"/>
 				</form>
 		</div>
 
