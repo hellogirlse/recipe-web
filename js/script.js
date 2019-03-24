@@ -1,15 +1,15 @@
-var kladdkakaIngredients = [{
-    amount: 125, ingredient: 'Smör', unit: 'g'
+var soupIngredients = [{
+    amount: 0.5, ingredient: 'Gullök', unit: 'st'
 }, {
-    amount: 2.5, ingredient: 'Strösocker', unit: 'dl'
+    amount: 2, ingredient: 'Tomater', unit: 'st'
 }, {
-    amount: 2, ingredient: 'Ägg', unit: 'st'
+    amount: 0.5, ingredient: 'Krossade krossade', unit: 'burk'
 }, {
-    amount: 1, ingredient: 'Vetemjöl', unit: 'dl'
+    amount: 0.5, ingredient: 'Grönsaksbuljongtärning', unit: 'st'
 }, {
-    amount: 3, ingredient: 'Kakao', unit: 'msk'
+    amount: 2.5, ingredient: 'Vatten', unit: 'dl'
 }, {
-    amount: 1, ingredient: 'Vaniljsocker', unit: 'tsk'
+    amount: 0.5, ingredient: 'Vispgrädde', unit: 'dl'
 }]
 
 function init() {
@@ -17,11 +17,11 @@ function init() {
     var unitList = document.getElementsByClassName("unit");
     var ingredientList = document.getElementsByClassName("ingredient");
 
-    for (var i = 0; i < kladdkakaIngredients.length; i++) {
-        amountList[i].innerHTML = kladdkakaIngredients[i].amount;
-        amountList[i].dataset.amount = kladdkakaIngredients[i].amount;
-        unitList[i].innerHTML = kladdkakaIngredients[i].unit;
-        ingredientList[i].innerHTML = kladdkakaIngredients[i].ingredient;
+    for (var i = 0; i < soupIngredients.length; i++) {
+        amountList[i].innerHTML = soupIngredients[i].amount;
+        amountList[i].dataset.amount = soupIngredients[i].amount;
+        unitList[i].innerHTML = soupIngredients[i].unit;
+        ingredientList[i].innerHTML = soupIngredients[i].ingredient;
     }
 }
 
@@ -30,8 +30,8 @@ function countAmount() {
     console.log(qty);
     var amountList = document.getElementsByClassName("amount");
 /** 
-   for (var i = 0; i < kladdkakaIngredients.length; i++) {
-    amountList[i].innerHTML = kladdkakaIngredients[i].amount * antal;
+   for (var i = 0; i < soupIngredients.length; i++) {
+    amountList[i].innerHTML = soupIngredients[i].amount * antal;
     }
     */
     for (var i = 0; i < amountList.length; i++) {
@@ -56,19 +56,19 @@ function stepDone(element) {
 
 function init2() {
     var tbody = document.getElementsByTagName('tbody')[0];
-    for (var i = 0; i < kladdkakaIngredients.length; i++) {
+    for (var i = 0; i < soupIngredients.length; i++) {
         var tr = document.createElement('tr');
 
         var tdAmount = document.createElement('td');
         tdAmount.classList.add('amount');
-        tdAmount.dataset.amount = kladdkakaIngredients[i].amount;
-        tdAmount.innerHTML = kladdkakaIngredients[i].amount;
+        tdAmount.dataset.amount = soupIngredients[i].amount;
+        tdAmount.innerHTML = soupIngredients[i].amount;
 
         var tdUnit = document.createElement('td');
-        tdUnit.innerHTML = kladdkakaIngredients[i].unit;
+        tdUnit.innerHTML = soupIngredients[i].unit;
 
         var tdIngredient = document.createElement('td');
-        tdIngredient.innerHTML = kladdkakaIngredients[i].ingredient;
+        tdIngredient.innerHTML = soupIngredients[i].ingredient;
 
         tr.appendChild(tdAmount);
         tr.appendChild(tdUnit);
