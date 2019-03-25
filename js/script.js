@@ -1,5 +1,5 @@
 var soupIngredients = [{
-    amount: 0.5, ingredient: 'Gullök', unit: 'st'
+    amount: 0.5, ingredient: 'Gul lök', unit: 'st'
 }, {
     amount: 2, ingredient: 'Tomater', unit: 'st'
 }, {
