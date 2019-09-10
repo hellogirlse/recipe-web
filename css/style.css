@@ -3,11 +3,24 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 p {
 	font-size: 18px;
+	font-weight: 300;
+}
+
+h2, h3 {
+	font-size: 32px;
+	margin-bottom: 16px;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h1 {
+	font-size: 72px;
+	color: #2ed573;
+	font-family: 'Montserrat Alternates', sans-serif;
 }
 
 /* HEADER STYLE */
@@ -33,7 +46,6 @@ header {
 	color: #2d3436;
 	margin-right: 24px;
 	text-transform: uppercase;
-	font-weight: 400;
 }
 
 .main-nav a:hover {
@@ -50,14 +62,7 @@ header {
 	background-size: cover;
 }
 
-.hero-title {
-	font-size: 72px;
-	color: #2ed573;
-	font-family: 'Montserrat Alternates', sans-serif;
-}
-
 .ingress {
-	margin-top: 20px;
 	font-size: 24px;
 }
 
@@ -73,35 +78,18 @@ header {
 	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
 	border-radius: 5px;
 	overflow: hidden;
-	padding-bottom: 20px;
+	text-align: center;
 }
 
 .card img {
 	width: 100%;
-	margin-bottom: 20px;
-}
-
-.card h2 {
-	font-size: 32px;
-	font-family: 'Montserrat Alternates', sans-serif;
-	margin-bottom: 16px;
-}
-
-.card p {
-	font-size: 18px;
-	width: 70%;
-	margin-bottom: 40px;
-	text-align: center;
 }
 
 .card a {
 	background-color: #7bed9f;
-	padding: 12px;
-	width: 50%;
-	font-size: 18px;
+	padding: 12px 24px;
 	border: none;
 	color: #ffffff;
-	text-decoration: none;
 }
 
 .card a:hover {
@@ -117,11 +105,6 @@ header {
 	padding-bottom: 100px;
 }
 
-.recipe-container h2 {
-	font-size: 32px;
-	font-family: 'Montserrat Alternates', sans-serif;
-}
-
 .recipe-container label {
 	font-size: 12px;
 	text-transform: uppercase;
@@ -132,15 +115,6 @@ select {
 	background-color: #ecf0f1;
 	width: 60px;
 	height: 30px;
-}
-
-select:hover {
-	background-color: #7bed9f;
-}
-
-select:focus {
-	outline: none;
-	background-color: #7bed9f;
 }
 
 table {
@@ -159,10 +133,7 @@ tbody {
 }
 
 .recipe-container h3 {
-	font-family: 'Montserrat Alternates', sans-serif;
-	font-size: 32px;
-	margin-top: 60px;
-	margin-bottom: 20px;
+	margin-top: 80px;
 }
 
 ol {
@@ -174,9 +145,6 @@ ol > li.list-group-item {
 	display: list-item;
 	padding-top: 20px;
 	padding-bottom: 20px;
-}
-ol > li.list-group-item:hover {
-	cursor: pointer;
 }
 
 /* KONTAKT.HTML STYLE */
@@ -190,23 +158,16 @@ form {
 }
 
 form label {
-	width: 100%;
 	display: block;
 	font-size: 12px;
-	margin-bottom: 8px;
 	text-transform: uppercase;
 }
 
 form input, input.form-control {
 	font-size: 16px;
 	padding: 20px;
-	margin-bottom: 32px;
+	margin-bottom: 16px;
 	border: 1px solid #2ed573;
-}
-
-form input.form-control:focus {
-	border-color: #2ed573;
-	box-shadow: 0 0 0 4px rgba(123, 237, 159,0.5);
 }
 
 form textarea, textarea.form-control {
@@ -215,11 +176,7 @@ form textarea, textarea.form-control {
 	font-size: 16px;
 	resize: vertical;
 	border: 1px solid #2ed573;
-}
-
-form textarea.form-control:focus {
-	border-color: #2ed573;
-	box-shadow: 0 0 0 4px rgba(123, 237, 159,0.5);
+	margin-bottom: 24px;
 }
 
 form input[type=submit] {
