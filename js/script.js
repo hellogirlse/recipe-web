@@ -1,14 +1,3 @@
-function countAmount() {
-    var qty = document.getElementById("qtySelect").value;
-    console.log(qty);
-    var myAmountList = document.getElementsByClassName("amount");
-
-    for (var i = 0; i < myAmountList.length; i+1) {
-        var newAmount = myAmountList[i].dataset.amount * qty;
-        myAmountList[i].innerHTML = newAmount
-    }
-}
-
 function stepDone(element) {
     console.log(element);
     var myClassList = element.classList;
@@ -19,6 +8,17 @@ function stepDone(element) {
     else {
         console.log('Klass step-done saknas');
         myClassList.add('step-done');
+    }
+}
+
+function countAmount() {
+    var qty = document.getElementById("qtySelect").value;
+    console.log(qty);
+    var myAmountList = document.getElementsByClassName("amount");
+
+    for (var i = 0; i < myAmountList.length; i++) {
+        var newAmount = myAmountList[i].dataset.amount * qty;
+        myAmountList[i].innerHTML = newAmount
     }
 }
 

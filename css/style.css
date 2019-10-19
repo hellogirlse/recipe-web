@@ -147,6 +147,11 @@ ol > li.list-group-item {
 	padding-bottom: 20px;
 }
 
+ol > li.list-group-item.step-done{
+	text-decoration: line-through;
+	background-color: #ecf0f1;
+}
+
 /* KONTAKT.HTML STYLE */
 .page-container {
 	padding-top: 60px;
@@ -191,9 +196,4 @@ form input[type=submit] {
 
 form input[type=submit]:hover {
 	background-color: #2ed573;
-}
-
-ol > li.list-group-item.step-done{
-	text-decoration: line-through;
-	background-color: #ecf0f1;
 }
