@@ -3,6 +3,11 @@
 
 	<head>
 		<title>Hello Girl Recept!</title>
+		<meta charset="utf-8"> 
+
+		<!-- ADDED DURING CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:700&display=swap" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
 	</head>
 
 	<body>
@@ -11,26 +16,27 @@
 			<nav class="main-nav">
 				<a href="index.html">Hem</a>
 				<a href="kontakt.html">Kontakta oss</a>
-				<a href="http://digitaldreams.cc/" target="_blank">Digital Dreams</a>
+				<a href="http://digitaldreams.cc/network/hello-girl/" target="_blank">Hello Girl!</a>
 			</nav>
 		</header>
 
 		<div class="page-container">
 			<h1 class="hero-title">Nyfiken på andra recept?</h1>
-			<p class="ingress">Hör av dig om du vill.</p>				
-				<form>
-					<label for="name">Namn</label>
-					<input name="name" type="text" placeholder="Förnamn Efternamn" required/>
+			<p class="ingress">Hör av dig om du vill.</p>
 
-					<label for="mail">E-post</label>
-					<input name="mail" type="email" placeholder="exempel@epost.se" required/>
+			<form>
+				<label for="name">Namn</label>
+				<input name="name" id="name" type="text" placeholder="Förnamn Efternamn" required/>
 
-					<label for="message">Meddelande</label>
-					<textarea name="message" placeholder="Skriv ett meddelande" required></textarea>
+				<label for="mail">E-post</label>
+				<input name="mail" id="mail" type="email" placeholder="exempel@epost.se" required/>
 
-					<input type="submit" value="Skicka"/>
+				<label for="message">Meddelande</label>
+				<textarea name="message" id="message" placeholder="Skriv ett meddelande" required></textarea>
 
-				</form>
+				<input type="submit" value="Skicka"/>
+
+			</form>
 		</div>
 
 	</body>
