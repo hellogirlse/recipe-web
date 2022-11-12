@@ -2,29 +2,39 @@
 <html>
 
 	<head>
-		<title>Hello Girl Recept!</title>
-		<meta charset="utf-8"> 
+        
+        <title>Hello Girl Recept!</title>
+        <meta charset="utf-8"> 
 
-		<!-- ADDED DURING CSS -->
+        <!-- ADDED DURING CSS -->
 		<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:700&display=swap" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet" type="text/css">
-	</head>
+
+        <!-- ADDED DURING JS -->
+        <script src="./js/script.js"></script>
+
+    </head>
 
 	<body>
 		<header>
+
 			<img id="logo" src="./img/logo.png" />
-			<nav class="main-nav">
+			<nav>
 				<a href="index.html">Hem</a>
 				<a href="kontakt.html">Kontakta oss</a>
-				<a href="http://digitaldreams.cc/network/hello-girl/" target="_blank">Hello Girl!</a>
+				<a href="https://www.hellogirl.se/" target="_blank">Hello Girl!</a>
 			</nav>
+
 		</header>
 
 		<div class="page-container">
+
 			<h1 class="hero-title">Nyfiken på andra recept?</h1>
 			<p class="ingress">Hör av dig om du vill.</p>
 
-			<form>
+			<!-- OnSubmit ADDED DURING JS -->
+			<form onsubmit="submitForm()">
+
 				<label for="name">Namn</label>
 				<input name="name" id="name" type="text" placeholder="Förnamn Efternamn" required/>
 
@@ -37,6 +47,7 @@
 				<input type="submit" value="Skicka"/>
 
 			</form>
+			
 		</div>
 
 	</body>

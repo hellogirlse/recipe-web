@@ -55,7 +55,7 @@ nav a:hover {
 
 /* HERO STYLE */
 .hero-container {
-	height: 600px;
+	height: 60vh;
 	background-image: url('../img/hero-img.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
@@ -64,7 +64,12 @@ nav a:hover {
 	flex-flow: column wrap;
 	align-items: flex-start;
 	justify-content: center;
-	padding: 0 120px;
+	padding-right: 24px;
+	padding-left: 24px;
+}
+
+.hero-headline * {
+	width: 100%;
 }
 
 .ingress {
@@ -76,14 +81,14 @@ nav a:hover {
 .card-container {
 	padding-top: 160px;
 	padding-bottom: 160px;
-	display: flex;
-	flex-flow: row wrap;
-	align-items: stretch;
-	justify-content: space-evenly;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 32px;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .card {
-	width: 30%;
 	box-shadow: 0px 4px 32px 0px rgba(0,0,0,0.2);
 	border-radius: 10px;
 	overflow: hidden;
@@ -125,6 +130,9 @@ nav a:hover {
 
 .hero-img {
 	width: 50%;
+	height: 60vh;
+	object-fit: cover;
+	object-position: center;
 }
 
 .intro-headline {
@@ -135,9 +143,9 @@ nav a:hover {
 
 .recipe-container {
 	padding-top: 160px;
-	padding-right: 120px;
 	padding-bottom: 160px;
-	padding-left: 120px;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .recipe-intro {
