@@ -68,8 +68,10 @@ nav a:hover {
 	padding-left: 24px;
 }
 
-.hero-headline * {
+.hero-headline {
 	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .ingress {
