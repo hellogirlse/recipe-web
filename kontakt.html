@@ -2,42 +2,67 @@
 <html>
 
 	<head>
-		<title>Hello Girl Recept!</title>
-		<meta charset="utf-8"> 
+        
+        <title>Kontakt</title>
+        <meta charset="utf-8">
 
-		<!-- ADDED DURING CSS -->
-		<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:700&display=swap" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet" type="text/css">
-	</head>
+    </head>
 
 	<body>
 		<header>
+
 			<img id="logo" src="./img/logo.png" />
-			<nav class="main-nav">
+			<nav>
 				<a href="index.html">Hem</a>
 				<a href="kontakt.html">Kontakta oss</a>
-				<a href="http://digitaldreams.cc/network/hello-girl/" target="_blank">Hello Girl!</a>
+				<a href="https://www.hellogirl.se/" target="_blank">Hello Girl!</a>
 			</nav>
+
 		</header>
 
-		<div class="page-container">
-			<h1 class="hero-title">Nyfiken på andra recept?</h1>
-			<p class="ingress">Hör av dig om du vill.</p>
+		<div class="intro-container">
 
-			<form>
-				<label for="name">Namn</label>
-				<input name="name" id="name" type="text" placeholder="Förnamn Efternamn" required/>
+			<div class="intro-headline">
+				<h1>Nyfiken på andra recept?</h1>
+				<p class="ingress">Hör av dig till oss om du vill.</p>
+			</div>
 
-				<label for="mail">E-post</label>
-				<input name="mail" id="mail" type="email" placeholder="exempel@epost.se" required/>
-
-				<label for="message">Meddelande</label>
-				<textarea name="message" id="message" placeholder="Skriv ett meddelande" required></textarea>
-
-				<input type="submit" value="Skicka"/>
-
-			</form>
 		</div>
+
+		<div class="page-container">
+
+			<div class="contact-form">
+				<form>
+
+					<label for="name">Namn</label>
+					<input name="name" id="name" type="text" placeholder="Förnamn Efternamn" required/>
+
+					<label for="mail">E-post</label>
+					<input name="mail" id="mail" type="email" placeholder="exempel@epost.se" required/>
+
+					<label for="message">Meddelande</label>
+					<textarea name="message" id="message" placeholder="Skriv ett meddelande" required></textarea>
+
+					<input type="submit" value="Skicka"/>
+
+				</form>
+			</div>
+
+			<div class="contact-person">
+
+				<img src="img/profile.jpg" />
+
+				<h2>Hello Girl!</h2>
+				<a href="tel:0700000000">070 000 00 00</a>
+				<a href="mailto:hello@hellogirl.se""">hello@hellogirl.se</a>
+
+			</div>
+			
+		</div>
+
+		<footer>
+			<p>Made with love by HelloGirl!</p>
+		</footer>
 
 	</body>
 	
