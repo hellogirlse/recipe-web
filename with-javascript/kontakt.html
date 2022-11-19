@@ -3,8 +3,18 @@
 
 	<head>
         
-        <title>Kontakt</title>
-        <meta charset="utf-8">
+        <title>Hello Girl Recept!</title>
+        <meta charset="utf-8"> 
+
+        <!-- ADDED DURING CSS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+		
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+
+        <!-- ADDED DURING JS -->
+        <script src="./js/script.js"></script>
 
     </head>
 
@@ -32,7 +42,9 @@
 		<div class="page-container">
 
 			<div class="contact-form">
-				<form>
+
+				<!-- OnSubmit ADDED DURING JS -->
+				<form onsubmit="submitForm()">
 
 					<label for="name">Namn</label>
 					<input name="name" id="name" type="text" placeholder="Förnamn Efternamn" required/>
