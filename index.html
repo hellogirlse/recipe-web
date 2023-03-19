@@ -4,7 +4,7 @@
 	<head>
         
         <title>Hello Girl Recept!</title>
-        <meta charset="utf-8"> 
+        <meta charset="utf-8">
 
     </head>
 
@@ -14,22 +14,21 @@
 			<img id="logo" src="./img/logo.png" />
 			<nav>
 				<a href="index.html">Hem</a>
-				<a href="kontakt.html">Kontakta oss</a>
 				<a href="https://www.hellogirl.se/" target="_blank">Hello Girl!</a>
 			</nav>
 
 		</header>
 
-		<div class="hero-container">
+		<div class="hero">
 
-			<div class="hero-headline">
+			<div class="container">
 				<h1>Min receptsida</h1>
-				<p id="front-page-ingress" class="ingress">Välkommen! Här hittar du mina bästa recept.</p>
+				<p class="ingress">Välkommen! Här hittar du mina bästa recept.</p>
 			</div>
 
 		</div>
 
-		<div class="card-container">
+		<div class="container card-container">
 
 			<div class="card">
 				<img src="./img/tomatsoppa.jpg"/>
@@ -53,6 +52,23 @@
 			</div>
 
 		</div>
+
+        <div class="container form-container">
+            <form>
+
+                <label for="name">Namn</label>
+                <input name="name" id="name" type="text" placeholder="Förnamn Efternamn" required/>
+
+                <label for="mail">E-post</label>
+                <input name="mail" id="mail" type="email" placeholder="exempel@epost.se" required/>
+
+                <label for="message">Meddelande</label>
+                <textarea name="message" id="message" placeholder="Skriv ett meddelande" required></textarea>
+
+                <input type="submit" value="Skicka"/>
+
+            </form>
+        </div>
 
 		<footer>
 			<p>Made with love by HelloGirl!</p>
