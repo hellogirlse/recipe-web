@@ -3,7 +3,7 @@
 
     <head>
         
-        <title>Hello Girl Recept!</title>
+        <title>Tomatsoppa</title>
         <meta charset="utf-8"> 
 
         <!-- ADDED DURING CSS -->
@@ -13,9 +13,6 @@
 
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 
-        <!-- ADDED DURING JS -->
-        <script src="./js/script.js"></script>
-
     </head>
 
     <body>
@@ -24,13 +21,12 @@
 			<img id="logo" src="./img/logo.png" />
 			<nav>
 				<a href="index.html">Hem</a>
-				<a href="kontakt.html">Kontakta oss</a>
 				<a href="https://www.hellogirl.se/" target="_blank">Hello Girl!</a>
 			</nav>
 
 		</header>
 
-        <div class="intro-container">
+        <div class="container intro-container">
 
             <img class="intro-image" src="./img/tomatsoppa-intro.jpg" />
 
@@ -41,25 +37,21 @@
 
         </div>
 
-        <div class="recipe-container">
+        <div class="container">
 
             <div class="recipe-intro">
 
                 <h2>Ingredienser</h2>
 
-                <div class="intro-group">
-                    <label>Portioner</label>
-
-                    <!-- ATTRIBUTES ADDED DURING JS -->
-                    <select id="qtySelect" onchange="countAmount()">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="4">4</option>
-                        <option value="6">6</option>
-                        <option value="8">8</option>
-                        <option value="12">12</option>
-                    </select>
-                </div>
+                <label>Portioner</label>
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                    <option value="12">12</option>
+                </select>
 
             </div>
 
@@ -73,38 +65,32 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <!-- ATTRIBUTES ADDED DURING JS -->
-                        <td data-amount="0.5" class="amount">0.5</td>
+                        <td>0.5</td>
                         <td>st</td>
                         <td>Gul lök</td>
                     </tr>
                     <tr>
-                        <!-- ATTRIBUTES ADDED DURING JS -->
-                        <td data-amount="2" class="amount">2</td>
+                        <td>2</td>
                         <td>st</td>
                         <td>Tomater</td>
                     </tr>
                     <tr>
-                        <!-- ATTRIBUTES ADDED DURING JS -->
-                        <td data-amount="0.5" class="amount">0.5</td>
+                        <td>0.5</td>
                         <td>burk</td>
                         <td>Krossade tomater</td>
                     </tr>
                     <tr>
-                        <!-- ATTRIBUTES ADDED DURING JS -->
-                        <td data-amount="0.5" class="amount">0.5</td>
+                        <td>0.5</td>
                         <td>st</td>
                         <td>Grönsaksbuljongtärning</td>
                     </tr>
                     <tr>
-                        <!-- ATTRIBUTES ADDED DURING JS -->
-                        <td data-amount="2.5" class="amount">2.5</td>
+                        <td>2.5</td>
                         <td>dl</td>
                         <td>Vatten</td>
                     </tr>
                     <tr>
-                        <!-- ATTRIBUTES ADDED DURING JS -->
-                        <td data-amount="0.5" class="amount">0.5</td>
+                        <td>0.5</td>
                         <td>dl</td>
                         <td>Vispgrädde</td>
                     </tr>
@@ -115,13 +101,12 @@
             <p>Följ stegen nedan för att få fram den perfekta tomatsoppan.</p>
 
             <ol>
-                <!-- Onclick ADDED DURING JS -->
-                <li onclick="stepDone(this)">Skala och hacka löken. Fräs den i lite matfett.</li>
-                <li onclick="stepDone(this)">Skär de färska tomaterna i små tärningar.</li>
-                <li onclick="stepDone(this)">Blanda lök, krossade tomater, färska tomater, tomatpuré, grönsaksbuljongtärningen och vatten i en rejäl kastrull.</li>
-                <li onclick="stepDone(this)">Låt koka ca 10 minuter.</li>
-                <li onclick="stepDone(this)">Smaka av med salt och peppar.</li>
-                <li onclick="stepDone(this)">Mixa allt med stavmixer eller i en matberedare. Späd med grädde för att få soppan krämig.</li>
+                <li>Skala och hacka löken. Fräs den i lite matfett.</li>
+                <li>Skär de färska tomaterna i små tärningar.</li>
+                <li>Blanda lök, krossade tomater, färska tomater, tomatpuré, grönsaksbuljongtärningen och vatten i en rejäl kastrull.</li>
+                <li>Låt koka ca 10 minuter.</li>
+                <li>Smaka av med salt och peppar.</li>
+                <li>Mixa allt med stavmixer eller i en matberedare. Späd med grädde för att få soppan krämig.</li>
             </ol>
 
         </div>
@@ -129,9 +114,6 @@
         <footer>
 			<p>Made with love by HelloGirl!</p>
 		</footer>
-
-        <!-- ADDED DURING JS -->
-        <script src="../js/script.js"></script>
 
     </body>
     

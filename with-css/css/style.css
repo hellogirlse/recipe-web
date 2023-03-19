@@ -11,16 +11,6 @@ p {
 	line-height: 20px;
 }
 
-a {
-	color: #000000;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #107777;
-	text-decoration: none;
-}
-
 h1, h2, h3 {
 	font-size: 32px;
 	font-weight: 700;
@@ -33,14 +23,20 @@ h1 {
 	color: #FFD877;
 }
 
+.container {
+	width: 100%;
+    max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
 /* HEADER STYLE */
 header {
 	width: 100%;
 	padding: 24px;
 	background-color: #FFFFFF;
-
-	/* ADDED DURING LAYOUT*/
-	display: flex;
+    display: flex;
 	flex-flow: row wrap;
 	align-items: center;
 	justify-content: space-between;
@@ -53,64 +49,49 @@ header {
 
 nav a {
 	margin-right: 24px;
-	text-transform: uppercase;
 	font-weight: 700;
-	letter-spacing: 1px;
+    text-decoration: none;
+    color: #000000;
 }
 
-/* FOOTER STYLE */
-footer {
-	padding-top: 24px;
-	padding-bottom: 24px;
-	background-color: #000000;
-	color: #FFFFFF;
-	text-align: center;
+nav a:hover {
+    color: #107777;
 }
 
 /* HERO STYLE */
-.hero-container {
+.hero {
 	height: 60vh;
 	background-image: url('../img/hero.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-
-	/* ADDED DURING LAYOUT*/
 	display: flex;
-	flex-flow: column wrap;
+	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
 }
 
-.hero-headline {
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
 .ingress {
-	font-size: 18px;
-	line-height: 24px;
+	font-size: 20px;
+	line-height: 28px;
 }
 
-#front-page-ingress {
+.hero .ingress {
 	color: #FFFFFF;
 }
 
 /* CARD STYLE */
 .card-container {
-	padding-top: 160px;
-	padding-bottom: 160px;
-	max-width: 1200px;
-	margin: 0 auto;
-
-	/* ADDED DURING LAYOUT*/
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
 	gap: 32px;
 }
 
 .card {
+    flex: 1;
 	box-shadow: 0px 4px 32px 0px rgba(0,0,0,0.2);
 	overflow: hidden;
 	text-align: center;
@@ -122,18 +103,17 @@ footer {
 }
 
 .card h2, .card p {
-	padding: 0 32px;
+	padding-right: 32px;
+    padding-left: 32px;
 }
 
 .card a {
 	display: inline-block;
 	background-color: #FFD877;
 	padding: 16px 24px;
-	border: none;
 	color: #000000;
 	text-transform: uppercase;
 	text-decoration: none;
-	letter-spacing: 1px;
 	font-weight: 700;
 	margin-top: 64px;
 	margin-bottom: 32px;
@@ -145,120 +125,9 @@ footer {
 	color: #FFFFFF;
 }
 
-/* TOMATSOPPA.HTML STYLE */
-.intro-container {
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-
-	/* ADDED DURING LAYOUT*/
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.intro-image {
-	width: 50%;
-	margin-right: 80px;
-}
-
-.recipe-container {
-	padding-top: 160px;
-	padding-bottom: 160px;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-.recipe-intro {
-	width: 100%;
-	margin-bottom: 24px;
-
-	/* ADDED DURING LAYOUT*/
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.intro-group label {
-	font-size: 14px;
-	padding-right: 16px;
-}
-
-select {
-	border: none;
-	background-color: #ECF0F1;
-	width: 80px;
-	height: 30px;
-}
-
-table {
-	width: 100%;
-	border-radius: 10px;
-	overflow: hidden;
-	border-collapse: collapse;
-	margin-bottom: 80px;
-}
-
-thead {
-	background-color: #107777;
-}
-
-thead > tr > th {
-	text-align: left;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #FFFFFF;
-	padding: 16px;
-	border-right: 1px solid #FFFFFF;
-}
-
-tbody {
-	background-color: #EFF8F8;
-}
-
-tbody > tr {
-	border-bottom: 1px solid #FFFFFF;
-}
-
-tbody > tr > td {
-	padding: 16px;
-	border-right: 1px solid #FFFFFF;
-}
-
-ol {
-	width: 50%;
-	margin-top: 24px;
-	list-style-position: inside;
-	border: 1px solid #000000;
-	border-radius: 10px;
-	overflow: hidden;
-}
-
-ol > li {
-	padding: 20px 16px;
-	border-bottom: 1px solid #ECF0F1;
-}
-
-ol > li:nth-last-child(1) {
-	border-bottom: none;
-}
-
-/* KONTAKT.HTML STYLE */
-.page-container {
-	padding-top: 24px;
-	padding-bottom: 160px;
-	width: 1200px;
-	margin: 0 auto;
-
-	/* ADDED DURING LAYOUT*/
-	display: grid;
-	grid-template-columns: 60% 40%;
-}
-
-form {
-	margin-top: 32px;
+/* FORM STYLE */
+.form-container {
+    padding-top: 0;
 }
 
 form label {
@@ -273,8 +142,7 @@ form input, form textarea {
 	padding: 20px;
 	margin-bottom: 32px;
 	border: 2px solid #107777;
-	border-radius: 5px;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 form textarea {
@@ -283,18 +151,15 @@ form textarea {
 }
 
 form input[type=submit] {
-	width: 50%;
+    width: auto;
 	background-color: #FFD877;
-	padding: 24px;
-	font-size: 18px;
+	padding: 16px 24px;
+	color: #000000;
 	text-transform: uppercase;
 	font-weight: 700;
-	letter-spacing: 1px;
-	border: none;
 	border-radius: 999px;
-	color: #000000;
-	text-decoration: none;
-	cursor: pointer;
+    border: none;
+    cursor: pointer;
 }
 
 form input[type=submit]:hover {
@@ -302,15 +167,89 @@ form input[type=submit]:hover {
 	color: #FFFFFF;
 }
 
-.contact-person {
-	/* ADDED DURING LAYOUT*/
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
+/* FOOTER STYLE */
+footer {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	background-color: #000000;
+	color: #FFFFFF;
+	text-align: center;
 }
 
-.contact-person img {
+/* TOMATSOPPA.HTML STYLE */
+.intro-container {
+    padding: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.intro-image {
 	width: 50%;
-	border-radius: 100%;
+	margin-right: 80px;
+}
+
+.recipe-intro {
+	width: 100%;
+	margin-bottom: 24px;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: flex-start;
+    gap: 16px;
+}
+
+.recipe-intro label {
+	font-size: 14px;
+    text-transform: uppercase;
+    margin-left: auto;
+}
+
+select {
+	width: 100px;
+	padding: 12px;
+	border: 2px solid #107777;
+	font-size: 16px;
+}
+
+table {
+	width: 100%;
+    margin-bottom: 80px;
+}
+
+thead {
+	background-color: #107777;
+}
+
+thead > tr > th {
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #FFFFFF;
+	padding: 16px;
+}
+
+tbody {
+	background-color: #EFF8F8;
+}
+
+tbody > tr > td {
+	padding: 16px;
+}
+
+ol {
+	width: 50%;
+	margin-top: 24px;
+	list-style-position: inside;
+	border: 1px solid #000000;
+}
+
+ol > li {
+	padding: 20px 16px;
+	border-bottom: 1px solid #ECF0F1;
+}
+
+ol > li:nth-last-child(1) {
+	border-bottom: none;
 }
