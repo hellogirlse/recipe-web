@@ -27,8 +27,6 @@ h1 {
 	width: 100%;
     max-width: 1200px;
 	margin: 0 auto;
-	padding-top: 120px;
-	padding-bottom: 120px;
 }
 
 /* HEADER STYLE */
@@ -88,6 +86,8 @@ nav a:hover {
     align-items: stretch;
     justify-content: space-between;
 	gap: 32px;
+    padding-top: 120px;
+	padding-bottom: 120px;
 }
 
 .card {
@@ -127,7 +127,11 @@ nav a:hover {
 
 /* FORM STYLE */
 .form-container {
-    padding-top: 0;
+	padding-bottom: 120px;
+}
+
+form {
+    margin-top: 32px;
 }
 
 form label {
@@ -178,7 +182,6 @@ footer {
 
 /* TOMATSOPPA.HTML STYLE */
 .intro-container {
-    padding: 0;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -188,6 +191,11 @@ footer {
 .intro-image {
 	width: 50%;
 	margin-right: 80px;
+}
+
+.recipe-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .recipe-intro {
