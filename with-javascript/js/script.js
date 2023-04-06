@@ -22,6 +22,10 @@ function countAmount() {
     }
 }
 
-function submitForm(){
-    alert('Tack för ditt meddelande');
+function validateForm(){
+    var name = document.getElementById("name").value;
+    if (name != "Stina") {
+      alert("Namn måste vara Stina");
+      return false;
+    }
 }
